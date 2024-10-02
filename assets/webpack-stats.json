@@ -1,0 +1,18 @@
+{
+  "status": "done",
+  "assets": {
+    "app.js": {
+      "name": "app.js",
+      "path": "/home/ekatfil/APML/static/js/dist/app.js"
+    },
+    "app.js.gz": {
+      "name": "app.js.gz",
+      "path": "/home/ekatfil/APML/static/js/dist/app.js.gz"
+    }
+  },
+  "chunks": {
+    "main": [
+      "app.js"
+    ]
+  }
+}
