@@ -1,5 +1,11 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-h1 {
-    color: red;
+.wrapper {
+    margin: 5rem 0 5rem 0;
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        color: blue;
+    }
 }

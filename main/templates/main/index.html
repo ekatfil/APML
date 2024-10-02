@@ -3,10 +3,24 @@
 
 
 {% block content %}
-<div class="container">
-    <h1>
-        Hello!
-    </h1>
+<div class="wrapper">
+  <div class="container">
+    <h1 class="mb-3">Обнаружение сгенерированного текста</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Проверить</button>
+    </form>
+    {% if result is not None %}
+      <div id="result" class="mt-3">
+          {% if result %}
+              <p>Текст сгенерирован</p>
+          {% else %}
+              <p>Текст оригинальный</p>
+          {% endif %}
+      </div>
+    {% endif %}
+  </div>
 </div>
 
 {% endblock content %}
